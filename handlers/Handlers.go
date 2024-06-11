@@ -18,7 +18,7 @@ func GetHandler(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 
-	t, err := template.ParseFiles("static/artists.html")
+	t, err := template.ParseFiles("static/artists/artists.html")
 	if err != nil {
 		ErrorHandler(w, r, http.StatusInternalServerError)
 		return
@@ -43,7 +43,7 @@ func GetArtist(w http.ResponseWriter, r *http.Request) {
 
 	for _, artist := range artists {
 		if artist.Id == id {
-			t, err := template.ParseFiles("static/artist.html")
+			t, err := template.ParseFiles("static/artist/artist.html")
 			if err != nil {
 				ErrorHandler(w, r, http.StatusInternalServerError)
 				return
@@ -64,7 +64,7 @@ func AboutUsHandler(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 
-	t, err := template.ParseFiles("static/aboutUs.html")
+	t, err := template.ParseFiles("static/aboutUs/aboutUs.html")
 	if err != nil {
 		ErrorHandler(w, r, http.StatusInternalServerError)
 		return
