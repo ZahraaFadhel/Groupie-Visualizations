@@ -6,7 +6,7 @@ Groupie Trackers is a project that involves receiving and manipulating data from
 
 _**To Run this Project**_
 1. Clone the Repository: git clone https://learn.reboot01.com/git/araed/groupie-tracker
-2. Navigate to the Project Directory: cd groupie-tracker
+2. Navigate to the Project Directory: cd groupie-visualizations
 3. Run the following: go run .
 4. Open the Website: Click on the link to navigate to http://localhost:8080
 5. Click on the artist icon to check information about each artist
