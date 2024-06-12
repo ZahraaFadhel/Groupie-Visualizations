@@ -9,15 +9,32 @@
 
   <body>
     <nav class="navbar">
-      <ul>
-        <li><a href="">Home</a></li>
-        <li><a href="http://localhost:8080/aboutUs">About us</a></li>
+
+      <div class="navdiv">
+
         <h1 class="navbar-title">Groupie Tracker</h1>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#Discover"> Discover</a></li>
+        <li><a href="http://localhost:8080/aboutUs">About us</a></li>
+        
+      
       </ul>
+    </div>
       </nav>
+
+    <div class="WelcomePage">
+        <h1 class="welcometxt">Discover Artitst with Groupie Tracker!!</h1>
+        <h2 id="welcometxt">This projects displays information about various artists, their first album, and their concerts</h2>
+        <a href="#Discover"><h3 id="welcometxt">Click here to discover!!</h3></a>
+        
+        
+        </div>
+
     <div class="container">
+      
       {{range .}}
-          <div> 
+          <div id="Discover"> 
             <!-- make URL Artist/[id] -->
             <a class="ArtLink" href="/artist/{{.Id}}"> 
               <img src="{{.Image}}" alt="Click here to go to the Artist page">

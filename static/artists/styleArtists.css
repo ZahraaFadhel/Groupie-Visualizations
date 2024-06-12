@@ -1,21 +1,26 @@
-body {
-  background-color: #FAACA8;
-  background-image: linear-gradient(19deg, #FAACA8 0%, #DDD6F3 80%);    
+:root {
+  --OurPurple: #AD88C6;
+  --OurLightPurple: #DDD6F3;
 }
 
-h1 {
+body {
+  background-color: #FAACA8;
+  background-image: linear-gradient(19deg, #e1a8fa 0%, #ddd6f3 80%);    
+}
+
+/* h1 {
   font-size: 55px;
   font-family:Georgia, 'Times New Roman', Times, serif;
   text-align: center;
   margin-bottom: 70px;
-}
+} */
 
 .container {
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
   justify-content: space-around;
-  padding: 10px 10px;
+  padding: 100px 100px;
 }
 
 .ArtLink {
@@ -32,7 +37,7 @@ h1 {
   text-align: center;
   cursor: pointer;
   text-decoration: none;
-  color: rgb(0, 0, 0);
+  color: #7469B6;
   transition: font-size 0.3s ease;
 }
 
@@ -45,10 +50,10 @@ a {
 }
 
 img {
-  border: 2.5px solid black;
+  border: 2.5px solid white ;
   border-radius: 50%;
   cursor: pointer;
-  box-shadow: 20px 20px 18px gray;
+  box-shadow: 20px 20px 18px var(--OurPurple);
   width: 100%;
   transition: width 0.3s ease;
 }
@@ -58,15 +63,24 @@ img:hover {
 }
 
 .navbar {
-  border-bottom: 1px solid black; /* This adds a line under the navbar */
-  background-color: black;
-
+  border-bottom: 10px solid var(--OurPurple); /* This adds a line under the navbar */
+  background-color: var(--OurPurple);
+  padding-right: 15px;
+  padding-left: 15px;
   /*This is to fix the position of the navbar*/
   position: sticky;
   top: 0;
 }
 
+.navdiv {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+}
+
 .navbar-title {
+  text-align: center;
   color: white;
   font-family: Cursive, sans-serif;
   font-size: 45px;
@@ -107,4 +121,37 @@ img:hover {
 
 .navbar li:hover {
   font-size: 18px;
+}
+
+
+.WelcomePage {
+   background-color: var(--OurPurple) ;
+   background-image: linear-gradient(0deg, var(--OurLightPurple) 0%, var(--OurPurple) 100%);
+  height: calc(100vh - 150px);
+  padding: 5% 2%;
+ 
+  width: auto;
+  overflow-y: auto; /* Enable vertical scrolling */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.welcometxt {
+  font-family: Cursive, sans-serif;
+  color: #8961a3;
+  font-size: 80px;
+  
+}
+
+#welcometxt {
+  font-family: Cursive, sans-serif;
+  color: var(--OurPurple);
+}
+
+html {
+  scroll-behavior: smooth;
+
 }

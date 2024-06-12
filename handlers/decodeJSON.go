@@ -74,7 +74,7 @@ func GetArtistsData() ([]Artist, error) {
 }
 
 func GetRelationData(id string) (Relation, error) {
-	fmt.Println("Fetching Relations data...")
+	//fmt.Println("Fetching Relations data...")
 
 	URL := "https://groupietrackers.herokuapp.com/api/relation" + "/" + id
 	data, err := getJsonData(URL)
