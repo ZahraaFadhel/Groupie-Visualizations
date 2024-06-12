@@ -8,14 +8,14 @@
 </head>
 
 <body>
-
-    <div class = "button">
-        <a href="http://localhost:8080/"> Return </a>
+    <div class = "navbar">
+        <ul>
+            <li> <a href="http://localhost:8080"> Home </a></li>
+            <li><a href="http://localhost:8080/aboutUs">About us</a></li>
+            <h1 class="navbar-title">{{.Name}}</h1>
+        </ul>
     </div>
-    
-
     <div class="artistHeader">
-        <h1 class="artistName">{{.Name}}</h1>
         <img src="{{.Image}}">
     </div>
     

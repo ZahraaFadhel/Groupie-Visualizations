@@ -58,9 +58,24 @@ img:hover {
 }
 
 .navbar {
-  border-bottom: 1px solid #333; /* This adds a line under the navbar */
+  border-bottom: 1px solid black; /* This adds a line under the navbar */
+  background-color: black;
+
+  /*This is to fix the position of the navbar*/
+  position: sticky;
+  top: 0;
 }
 
+.navbar-title {
+  color: white;
+  font-family: Cursive, sans-serif;
+  font-size: 45px;
+  margin: 0;
+}
+
+.navbar-title:hover {
+  color: #d0c8ed;
+}
 
 .navbar ul{
   /* remove bullets */
@@ -71,16 +86,18 @@ img:hover {
 }
 
 .navbar a {
-  color: rgb(0, 0, 0);
+  color: white;
   text-decoration: none;
-  padding: 15px;
+  padding: 20px;
   display: block;
   text-align: center;
 }
 
 .navbar a:hover {
+  color: black;
   background-color: #d0c8ed;
 }
+
 
 .navbar li {
   float: left;

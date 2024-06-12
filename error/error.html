@@ -7,11 +7,18 @@
 </head>
 
 <body>
+    <nav class="navbar">
+        <ul>
+            <li> <a href="http://localhost:8080"> Home </a></li>
+            <li> <a href="http://localhost:8080/aboutUs"> About Us </a></li>
+            <h1 class="navbar-title">{{.Title}}</h1>
+        </ul>
+    </nav>
+
     <div class="errorBox">
-        <h1>{{.Title}}</h1>
-        <p>{{.Message}}</p>
+        <h2>{{.Message}}</>
         <div class = "button">
-            <a href="http://localhost:8080/"> Return Home </a>
+            <a href="http://localhost:8080/"> Return </a>
         </div>
     </div>
 </body>
