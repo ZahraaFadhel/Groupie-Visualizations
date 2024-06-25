@@ -40,10 +40,16 @@
         
         </div>
 
+  
+ <div class="Searchbardiv">
+              <form action="" class="searchbar">
+                <input type="text" placeholder="Search Here">
+                <button type="submit" > <img src="images/Search.png" alt=""></button>
+              </form>
+            </div>
     <div class="container">
-      
       {{range .}}
-          <div id="Discover"> 
+      <div id="Discover"> 
             <!-- make URL Artist/[id] -->
             <a class="ArtLink" href="/artist/{{.Id}}"> 
               <img src="{{.Image}}" alt="Click here to go to the Artist page">
@@ -52,6 +58,5 @@
           </div>
       {{ end }}
     </div>
-
   </body>
 </html>
